@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
+  </head>
+
+  <body>
+
+        <div class="container-lg my-lg-2">
+            <div class="row p-4 bg-warning">
+                <h1>A Fancy Schmancy Dinner</h1>
+            </div>
+            <div class="row">
+                <div class="d-flex align-items-center flex-column col-sm-12 col-lg-6 p-4 drink">
+                    <img src="img/water.jpg" alt="water">
+                    <p class="my-1">
+                        Water to drink
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-column col-sm-12 col-lg-6 p-4 appetizer">
+                    <img src="img/asparagus.webp" alt="asparagus">
+                    <p class="my-1">
+                        Buttered and roasted asparagus
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex align-items-center flex-column col-sm-12 col-md-6 col-lg-4 p-4 entree">
+                    <img src="img/filet.jpg" alt="filet mignon">
+                    <p class="my-1">
+                        Medium-rare filet mignon
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-column col-sm-12 col-md-6 col-lg-4 p-4 side">
+                    <img src="img/potatoes.jpg" alt="mashed potatoes">
+                    <p class="my-1">
+                        Mashed potatoes with garlic
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-column col-sm-12 col-md-12 col-lg-4 p-4 dessert">
+                    <img src="img/cheesecake.jpg" alt="cheesecake">
+                    <p class="my-1">
+                        Cheesecake with strawberry topping
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 p-5 bg-info">
+                    <p>
+                        To accomplish this assignment, I used lots of col- classes. The overarching container is a container-lg, since 
+                        I wanted the container to take up a lot of screen real estate. I looked up how to do margins with Bootstrap, and 
+                        then applied a Y margin (my) to large screens of the container, so it's not touching against the top of the browser 
+                        on desktop. I also added a small one to meal paragraphs so they're not touching the images.
+                    </p>
+                    <p>
+                        When it comes to the divs inside the rows, I defined col-sm (small breakpoint) for small screens, 
+                        col-md (medium breakpoint) for medium-sized screens, and col-lg (large breakpoint) for larger and beyond screens. 
+                        That way the divs don't horizontally overflow on smaller devices. I made sure each number I 
+                        used added up to 12--the total number of cols in a Bootstrap row. I then looked up how to do paddings in 
+                        Bootstrap, and applied a padding to each div inside of a row.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+  </body>
+
+</html>
